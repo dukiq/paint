@@ -1,0 +1,92 @@
+/* Подключаем шрифт Rostov */
+@font-face {
+    font-family: 'Rostov';
+    src: url('rostov.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Rostov', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 2px solid #333;
+    cursor: crosshair;
+    background-color: white;
+}
+
+label, button {
+    font-family: 'Rostov', Arial, sans-serif;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#upload {
+    margin-right: 10px;
+}
+
+/* Стили для dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+/* Показать меню при наведении */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

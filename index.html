@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Paint</h1>
+        <div class="toolbar">
+            <button id="upload">Open Image</button>
+            <input type="file" id="fileInput" accept="image/*" style="display:none;">
+            <label for="color">Color:</label>
+            <input type="color" id="color" value="#000000">
+            <div class="dropdown">
+                <button id="brush">Brush</button>
+                <div id="toolOptions" class="dropdown-content">
+                    <button id="brushTool">Brush</button>
+                    <button id="eraserTool">Rubber</button>
+                </div>
+                <input type="range" id="size" min="1" max="50" value="5">
+            </div>
+            <button id="clear">Clear Canvas</button>
+            <button id="save">Save Image</button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
